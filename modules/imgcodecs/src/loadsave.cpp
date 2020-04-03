@@ -71,8 +71,8 @@ static Size validateInputImageSize(const Size& size)
     CV_Assert(static_cast<size_t>(size.width) <= CV_IO_MAX_IMAGE_WIDTH);
     CV_Assert(size.height > 0);
     CV_Assert(static_cast<size_t>(size.height) <= CV_IO_MAX_IMAGE_HEIGHT);
-    uint64 pixels = (uint64)size.width * (uint64)size.height;
-    CV_Assert(pixels <= CV_IO_MAX_IMAGE_PIXELS);
+//    uint64 pixels = (uint64)size.width * (uint64)size.height;
+//    CV_Assert(pixels <= CV_IO_MAX_IMAGE_PIXELS);
     return size;
 }
 
